@@ -1,0 +1,17 @@
+
+<p>Não achou seu curso? Cadastre ele</p>
+<div class="row">
+  <div class="form-group col-md-6">
+      <label for="cursoInput">Curso</label>
+      <input type="text" class="form-control" id="nomeInput" #nomeInput>
+  </div>
+  <div class="form-group col-md-6 mb-2">
+    <label for="periodoInput">Periodo</label>
+    <input type="text" class="form-control" id = "periodoInput" #periodoInput>
+  </div>
+</div>
+<div class="row"><button [ngStyle]="estiloBotaoCadastro()" class="btn btn-primary btn-block mt-3" (click)="adicionar(nomeInput.value,periodoInput.value)" type="submit" >
+Cadastrar
+</button></div>
+
+
