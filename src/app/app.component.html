@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+          <app-fatec-info></app-fatec-info>
+    </div><p>Fatec Ipiranga - Cursos disponiveis:</p>
+    <div class="row">
+
+      <div class="col-4" *ngFor="let item of cursos">
+        <app-fatec-cursos [curso]="item"></app-fatec-cursos></div>
+      </div>
+      <div class="row">
+        <app-fatec-cadastro-curso  (cursoAdicionada)="onAdicionarCurso($event)"></app-fatec-cadastro-curso>
+      </div>
+</div>
+
+
